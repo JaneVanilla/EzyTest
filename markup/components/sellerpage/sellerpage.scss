@@ -1,0 +1,37 @@
+.sellerpage {
+  padding-bottom: 74px;
+}
+.sellerpage-text {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px; //если добавить нижний маргин у верзнего абзаца получится 40px
+  color: #333;
+  font-family: $latoFont;
+  font-size: 16px;
+  line-height: 24px;
+}
+.sellerpage h2 {
+  margin: 0;
+  font-size: 26px;
+  line-height: 39px;
+}
+.sellerpage-text__company p {
+  width: 653px;
+}
+.sellerpage-text__card a {
+  text-decoration: none;
+  color: #000;
+}
+.sellerpage-asortment h2 {
+  margin-bottom: 10px;
+}
+
+.sellerpage-asortment td {
+  padding-bottom: 6px;
+  padding-right: 30px;
+  color: #333;
+  font-family: $latoFont;
+  font-size: 16px;
+  line-height: 24px;
+}
+

@@ -1,0 +1,49 @@
+mixin sellerpage(data)
+  .sellerpage
+      .sellerpage-text
+          .sellerpage-text__company
+              h2 О компании
+              p #{data.sellertext1}
+              p #{data.sellertext2}
+              p #{data.sellertext3}
+              p #{data.sellertext4}
+              p #{data.sellertext5}
+          .sellerpage-text__rekvizits
+              h2 Платёжные реквизиты
+              p.sellerpage-text__card
+                 b   Перевод по номеру карты Сбербанк: <br />
+                 | 4276 5500 1781 8413 <br />
+                 | Литовка Алексей Николоевич <br />
+                 a(href="tel:+79817569173") +7{981) 746-91-73
+              p.sellerpage-text__bank
+                  b   Банковский перевод: <br />
+                  | Литовка Алексей Николоевич <br />
+                  | Номер счёта: 4276 5500 1781 8413 <br />
+                  | Наименование банка получателя: <br />
+                  | Северозападный банк ОАО "Сбербанк России"  <br />
+                  | г.Санкт-Петербург <br />
+                  | БИК: 044030563 <br />
+                  | ИНН Банка получателя: 77038492874 <br />
+                  | Кореспонденский счёт: <br />
+                  | 30180103000000000019
+      .sellerpage-asortment
+          h2 Основной ассортимент
+          table
+              tr
+                mixin td1(index1)
+                  td(width="360px") #{data.name[index1]}
+                +td1(0)
+                +td1(1)
+                +td1(2)
+              tr
+                +td1(3)
+                +td1(4)
+                +td1(5)
+              tr
+                +td1(6)
+                +td1(7)
+                +td1(8)
+              tr
+                +td1(9)
+                +td1(10)
+                +td1(11)

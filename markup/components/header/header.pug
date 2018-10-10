@@ -1,0 +1,31 @@
+mixin header(data)
+   .header-banner
+   .header-container
+      .header-content.clearfix
+         a.header-content__logo
+            img(src="" + data.logo)
+         ul.header-content__select
+            mixin contryies(index)
+               li(id="item")
+                  a.header-content__contry-list #{data.name[index]}
+                  span(class="fas fa-angle-down" id="arrow")
+            +contryies(0)
+            +contryies(1)
+            +contryies(2)
+            +contryies(3)
+
+         .header-content__seler
+            img(src="static/img/content/house.png" width="31px" height="26px")
+            span Продавать <br> на
+               a(href="#")  ezypart.kz
+         .header-content__login
+            img(src="static/img/content/user.png" width="22px" height="22px")
+            span Личный <br> кабинет
+         .header-content__user-block
+            span.header-content__user-search
+               i(class="fas fa-search")
+            span.header-content__user-basket
+               i(class="fas fa-shopping-cart")
+            span.header-content__user-humburger
+               //i(class="fas fa-bars")
+

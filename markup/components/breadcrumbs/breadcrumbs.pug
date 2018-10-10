@@ -1,0 +1,8 @@
+mixin breadcrumbs(data)
+    ul.breadcrumbs
+        mixin items(indexHref, indexName)
+           li
+             a(href="" + data.link[indexHref])= data.name[indexName]
+        +items(0, 0)
+        +items(1, 1)
+

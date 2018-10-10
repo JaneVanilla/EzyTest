@@ -1,0 +1,28 @@
+mixin footer(data)
+   .footer
+   .container
+      .footer-content.clearfix
+         ul.footer-nav
+            mixin navItem(index)
+               li
+                  a(href="#") #{data.nav[index]}
+            +navItem(0)
+            +navItem(1)
+            +navItem(2)
+            +navItem(3)
+            +navItem(4)
+            +navItem(5)
+            +navItem(6)
+         .footer-user-block
+            ul.footer-social
+               mixin social(index)
+                  li
+                     a(href="#")
+                        i(class="" + data.soc[index])
+               +social(0)
+               +social(1)
+               +social(2)
+            .footer-log
+               a.footer-log__block
+                  img(src="" + data.logo)
+               span &#169; 2018, EZY parts

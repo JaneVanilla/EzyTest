@@ -1,0 +1,28 @@
+.breadcrumbs {
+  margin-bottom: 20px;
+}
+.breadcrumbs li {
+  position: relative;
+  display: inline-block;
+  padding-right: 10px;
+}
+.breadcrumbs li::after {
+  position: absolute;
+  content: '/';
+  right: 0;
+  bottom: 0;
+  font-size: 16px;
+}
+.breadcrumbs li:last-child::after {
+  display: none;
+}
+.breadcrumbs a {
+  color: dodgerblue;
+  text-decoration: none;
+  font-family: $latoFont;
+  font-size: 14px;
+  line-height: 17px;
+}
+.breadcrumbs li:last-child a{
+  color: #333;
+}

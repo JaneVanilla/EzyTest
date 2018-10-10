@@ -1,0 +1,33 @@
+mixin summary(data)
+  .seller-summary
+      h2 #{data.toptitle}
+      .summary-content
+          a.summary-content__logo(href="#")
+              img(src="static/img/content/log2.png")
+          .summary-content__left
+              .summary-content__reviews
+                  i(class="fas fa-star")
+                  i(class="fas fa-star")
+                  i(class="fas fa-star")
+                  i(class="fas fa-star")
+                  i(class="fas fa-star")
+                  span  97% положительных из 137 отзывов
+              .summary-content__blocks
+                  p Высокий уровень довария
+                      span  90% <br>
+                      | Дата регистрации: 17 апреля 2014
+                  p Рейтинг продавца: 9 446 <br />
+                      | Просмотров всего: 66 850
+                  address.summary-content__address
+                      i(class="fa fa-phone-volume")
+                      a.summary-content__phone(href="tel:+9817469145") +7 (981) 746-91-45 <br />
+                      i(class="fa fa-envelope")
+                      a.summary-content__mail(href="mailto:seller@mail.ru") Написать продавцу
+              nav.summary-content__nav
+                  ul.summary-content__ul
+                      mixin contentItem(indexHref, indexName)
+                          li
+                              a(href="" + data.nav[indexHref]) #{data.name[indexName]}
+                      +contentItem(0,0)
+                      +contentItem(1,1)
+                      +contentItem(2,2)
