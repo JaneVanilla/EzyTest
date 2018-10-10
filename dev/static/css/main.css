@@ -475,7 +475,7 @@ ul {
 .footer {
   width: 100%;
   height: 60px;
-  background: url("/static/img/content/banner.png");
+  background: url("../img/content/banner.png");
   background-position: center;
 }
 
@@ -555,7 +555,7 @@ ul {
 .header-banner {
   width: 100%;
   height: 60px;
-  background: url("/static/img/content/banner.png");
+  background: url("../img/content/banner.png");
   background-position: center;
 }
 
